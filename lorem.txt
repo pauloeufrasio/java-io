@@ -1,0 +1,5 @@
+O mesmo é válido para a saída, a aplicação mobile retornará dados para a Alura,
+ por exemplo, no momento em que um usuário conclui um vídeo ou exercício.
+ O fluxo de saída concreto é variável, pode ser que o usuário decida gravar um arquivo ou que haja um retorno por meio da rede,
+ como é o caso da Alura, ou ainda, podemos ter um retorno no console que é aquele que vemos ao executar um programa no Eclipse,
+ por exemplo.
