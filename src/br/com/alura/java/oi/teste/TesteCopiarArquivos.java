@@ -5,28 +5,29 @@ import java.io.*;
 public class TesteCopiarArquivos {
     public static void main(String[] args) throws IOException {
 
-        // entrada de dados
+        // Fluxo de Entrada de arquivos por chamada InputStream
         InputStream fis = System.in;
-
-        // Transformando bit em byte em caracter
         Reader isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
 
-        // Fluxo de entrada com arquivo
-        OutputStream fos = new FileOutputStream("lorem2.txt");
-        // Transformando bit em byte em caracter
+        // Saida  de arquivo por chamada OutputStream
+        OutputStream fos = System.out;
+        // transformando bite em byte em caracteres
         Writer osw = new OutputStreamWriter(fos);
         BufferedWriter bw = new BufferedWriter(osw);
 
         String linha = br.readLine();
 
-        while(linha != null && linha.isEmpty()) {
+        while (linha != null && !linha.isEmpty()) {
             bw.write(linha);
             bw.newLine();
+            bw.flush();
             linha = br.readLine();
         }
 
         br.close();
         bw.close();
     }
+
 }
+
