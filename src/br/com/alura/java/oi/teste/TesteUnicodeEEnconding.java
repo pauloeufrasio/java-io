@@ -9,7 +9,7 @@ public class TesteUnicodeEEnconding {
 
         // Pegando code point
         String s = "C";
-        System.out.println(s.codePointAt(0));
+        System.out.println(s.codePointAt(0)); // unicode
 
         // Buscar Encoding da maquina
         Charset charset = Charset.defaultCharset();
