@@ -10,7 +10,7 @@ public class TesteLeitura2 {
     public static void main(String[] args) throws FileNotFoundException {
 
         // atribuindo entrada de dados do arquivo
-        Scanner sc = new Scanner(new File("contas.csv"));
+        Scanner sc = new Scanner(new File("contas.csv"),"UTF-8"); // aplicando charset UTF-8
         // enquanto tiver uma proxima linha vou pegar e imprimir
         while (sc.hasNextLine()){
             String linha = sc.nextLine();
@@ -28,6 +28,7 @@ public class TesteLeitura2 {
             double valor5 = linhaScanner.nextDouble();
 
             System.out.println(valor1 + valor2 + valor3 + valor4 + valor5 );
+
             linhaScanner.close();
 
 
